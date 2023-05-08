@@ -14,7 +14,6 @@ import initNumerosAnimal from "./modules/numerosAnimal.js";
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
 
-initAnimacaoScroll();
 initAccordion();
 initTabNav();
 initModal();
@@ -25,3 +24,4 @@ initDate();
 initFetchAnimais();
 initFetchBitcoin();
 initNumerosAnimal();
+initAnimacaoScroll();

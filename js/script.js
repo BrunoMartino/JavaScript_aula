@@ -5,11 +5,10 @@ import TabNav from "./modules/tabnav.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
-import initMenuMobile from "./modules/menu_mobile.js";
 import initDate from "./modules/date_object.js";
 import fetchAnimais from "./modules/fetchAnimais.js";
 import initFetchBitcoin from "./modules/fetchBitcoin.js";
-import NumerosAnimal from "./modules/numerosAnimal.js";
+import MenuMobile from "./modules/menu_mobile.js";
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
@@ -33,8 +32,10 @@ modal.init();
 const tooltip = new Tooltip("[data-tooltip]");
 tooltip.init();
 
+const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
+menuMobile.init();
+
 initDropdownMenu();
-initMenuMobile();
 initDate();
 
 initFetchBitcoin();

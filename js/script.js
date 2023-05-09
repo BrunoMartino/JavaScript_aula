@@ -36,6 +36,8 @@ tooltip.init();
 initDropdownMenu();
 initMenuMobile();
 initDate();
-fetchAnimais("../../animaisapi.json", ".numeros-grid");
+
 initFetchBitcoin();
 initAnimacaoScroll();
+
+fetchAnimais("../../animaisapi.json", ".numeros-grid");

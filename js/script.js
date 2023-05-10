@@ -4,7 +4,7 @@ import TabNav from "./modules/tabnav.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
 import DropdownMenu from "./modules/dropdown-menu.js";
-import initDate from "./modules/date_object.js";
+import Funcionamento from "./modules/date_object.js";
 import fetchAnimais from "./modules/fetchAnimais.js";
 import MenuMobile from "./modules/menu_mobile.js";
 import fetchBitcoin from "./modules/fetchBitcoin.js";
@@ -40,7 +40,9 @@ animaScroll.init();
 
 const dropdownMenu = new DropdownMenu("[data-dropdown]");
 dropdownMenu.init();
-initDate();
+
+const funcionamento = new Funcionamento("[data-semana]");
+funcionamento.init();
 
 fetchAnimais("../../animaisapi.json", ".numeros-grid");
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");

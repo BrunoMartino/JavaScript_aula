@@ -4,11 +4,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
-@media (max-width: 700) {
-  .numeros-grid {
-    grid-column: 1;
-  }
-}
 
 .numeros-grid h3 {
   font-size: 2rem;
@@ -20,4 +15,12 @@
   font-weight: bold;
   font-size: 1.5rem;
   color: #e54;
+}
+@media (max-width: 700) {
+  .numeros-grid {
+    grid-column: 1;
+  }
+  .numeros-grid h3 {
+    font-size: 1.5rem;
+  }
 }

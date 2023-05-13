@@ -19,6 +19,7 @@
 @media (max-width: 700) {
   .numeros-grid {
     grid-column: 1;
+    gap: 0;
   }
   .numeros-grid h3 {
     font-size: 1.5rem;
